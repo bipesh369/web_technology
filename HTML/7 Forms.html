@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+
+------- Input Form -------
+  <h1>Contact Us</h1>
+<form action="http://www.example.com/login.php">
+<p>Fullname:
+<input type="text" name="fullname" size="50" 
+maxlength="30" />
+</p>
+<p>Position:
+<input type="text" name="poition" size="50" maxlength="50">
+</p>
+<p>Skills:
+<input type="text" name="skills" size="50" maxlength="50">
+</p>
+<p>Messages:
+<input type="textarea" name="messages" size="250" maxlength="250">
+</p>
+</form>
+
+----- Radio Buttons ------
+<form action="">
+<p>Select Yout Favourite Course</p>
+<input type="radio" name="course" value="CSIT"> CSIT
+<input type="radio" name="course" value="BIT"> BIT
+<input type="radio" name="course" value="BCA"> BCA  
+</form>
+<br/>
+
+------ Check BOx ------
+<form>
+<p>Please select your favorite music service(s):
+  <br/>
+<input type="checkbox" name="service" 
+value="itunes" checked="checked" /> iTunes
+<input type="checkbox" name="service" 
+value="lastfm" /> Last.fm
+<input type="checkbox" name="service" 
+value="spotify" /> Spotify
+</p>
+</form>
+
+------ Drop Down List Box -------
+<form action="">
+  <p>Devices</p>
+  <select name="devices">
+    <option value="mobile">mobile</option>
+    <option value="laptop">laptop</option>
+    <option value="headphone">headphone</option>
+    <option value="speaker">speaker</option>
+  </select>
+</form>
+<br/>
+
+------- Multiple Select Box -------
+<form action="">
+  <p>Do you play any of the following instruments? 
+(You can select more than one option by holding 
+down control on a PC.)</p>
+<select name="instruments" size="3" 
+multiple="multiple">
+<option value="guitar" selected="selected">
+Guitar</option>
+<option value="drums">Drums</option>
+<option value="keyboard" 
+selected="selected">Keyboard</option>
+<option value="bass">Bass</option>
+<option value="Basuri" selected="selected">
+Basuri</option>
+<option value="Tabala">Tabala</option>
+<option value="keyboard" 
+selected="selected">Keyboard</option>
+<option value="Harmoni">Harmoni</option>
+</select>
+</form>
+<br/>
+
+------- Fill Input Box and Submit Button-------
+<form action="" method="post">
+  <p>Upload Your Video</p>
+  <input type="file" name="video"> <br>
+  <input type="submit" name="upload" value="upload">
+</form>
+<br/>
+
+------ Image Button ------
+<form action="">
+<p>Subscribe to our email list:</p> 
+  <input type="text" name="email" />
+  <input type="image" src="images/logo.png" 
+width="100" height="20" />
+</form>
+<br/>
+
+------ Buttion and Hidden Control -------
+<form action="">
+<button><img src="images/add.png" alt="add" 
+width="10" height="10" /> Add</button>
+<input type="hidden" name="bookmark" 
+value="lyrics" />
+</form>
+<br/>
+
+------ Labeling Forms and Handeling ------
+<br/>
+<label>Age: <input type="text" name="age" /></label>
+<br/ >
+Gender:
+<input id="female" type="radio" name="gender"
+value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" 
+value="m">
+<label for="male">Male</label> 
+<br/>
+
+----- Grouping Form Element ------
+<fieldset>
+<legend>Contact details</legend>
+<label>Email:<br />
+<input type="text" name="email" /></label><br />
+<label>Mobile:<br />
+<input type="text" name="mobile" /></label><br />
+<label>Telephone:<br />
+<input type="text" name="telephone" /></label>
+</fieldset>
+<br/>
+
+----- HTML5: Validation Form, Date Input, Email & URL Input, Search Input  -----
+<form action="http://www.example.com/login/"
+method="post"> 
+<label for="username">Username:</label>
+<input type="text" name="username"
+required="required" /></title><br /> 
+<label for="password">Password:</label>
+<input type="password" name="password"
+required="required" /> <br>
+<input type="submit" value="Submit" /> <br>
+
+<label for="username">Departure date:</label>
+<input type="date" name="depart" /><br>
+<input type="submit" value="Submit" />
+
+<p>Please enter your email address:</p>
+<input type="email" name="email" />
+<input type="submit" value="Submit" />
+
+<p>Search:</p>
+<input type="search" name="search" />
+<input type="submit" value="Search" />
+
+</form>
+
+
+</body>
+</html>

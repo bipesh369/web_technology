@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+</head>
+<body>
+
+----- Table Structure and Table Heading ------
+  <table>
+    <tr>
+      <th scope="col">S.N</th>
+      <th scope="col">SName</th>
+      <th scope="col">Address</th>
+      <th scope="col">Faculty</th>
+    </tr>
+    <tr>
+      <th scope="row" >1</th>
+      <td >Bipesh</td>
+      <td >Bardiya</td>
+      <td  >Bsc.CSIT</td>
+    </tr>
+    <tr>
+      <th scope="row" >2</th>
+      <td>Aayush</td>
+      <td>Surkhet</td>
+      <td>CSIT</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Sudip</td>
+      <td>Jumla</td>
+      <td>CS</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Binaya</td>
+      <td>Bardiya</td>
+      <td>CSIT</td>
+    </tr>
+  </table>
+  <br/>
+  
+  
+------ Spanning Columns -----
+   <table>
+  <tr>
+    <th>Days</th>
+    <th>9am</th>
+    <th>10am</th>
+    <th>11am</th>
+    <th>12am</th>
+  </tr>
+  <tr>
+    <th>Monday</th>
+    <td colspan="2">Geography</td>
+    <td>Math</td>
+    <td>Art</td>
+  </tr>
+  <tr>
+    <th>Tuesday</th>
+    <td colspan="3">Gym</td>
+    <td>Home Ec</td>
+  </tr>
+</table>
+<br/>
+
+------ Spinning Rows ------
+ <table>
+  <tr>
+    <th>Shedule</th>
+    <th>Sprit</th>
+    <th>Salaar</th>
+    <th>KGF-3</th>
+  </tr>
+  <tr>
+    <th>7am to 10:30am</th>
+    <td rowspan="2">movie</td>
+    <td>action</td>
+    <td>action thiller</td>
+  </tr>
+  <tr>
+ <th>11am to 2:30pm</th>
+    <td rowspan="3">film</td>
+    <td>sports</td>
+  </tr>
+</table>
+<br/>
+
+------- Long Tables --------
+ <table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Income</th>
+      <th>Expeduture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7th Jan</td>
+      <td>100K</td>
+      <td>30k</td>
+    </tr>
+    <tr>
+      <th>8th Jan</th>
+      <td>150k</td>
+      <td>50k</td>
+    </tr>
+    <tr>
+      <th>9th Jan</th>
+      <td>200k</td>
+      <td>100k</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <th>Total</th>
+    <td>450k</td>
+    <td>180k</td>
+  </tfoot>
+</table>
+<br/>
+
+------- Old Code: Width and Spacing -------
+ <table width="100" cellpadding="10" cellspacing="10">
+  <tr>
+    <th width="150"></th>
+    <th>Withdrawn</th>
+    <th>Credit</th>
+    <th width="150">Balance</th>
+  </tr>
+  <tr>
+    <th>January</th>
+    <td>250.00</td>
+    <td>660.50</td>
+    <td>410.50</td>
+  </tr>
+  <tr>
+    <th>February</th>
+    <td>135.55</td>
+    <td>895.20</td>
+    <td>1170.15</td>
+  </tr>
+</table>
+
+
+----- Old Code: Border and BackGround ------
+ <table border="2" bgcolor="#efefef">
+  <tr>
+    <th width="150">Month</th>
+    <th>Withdrawn</th>
+    <th>Credit</th>
+    <th width="150" bgcolor="#cccccc">Balance</th>
+  </tr>
+  <tr>
+    <th>January</th>
+    <td>250.00</td>
+    <td>660.50</td>
+    <td bgcolor="#cccccc">410.50</td>
+  </tr>
+  <tr>
+    <th>February</th>
+    <td>135.55</td>
+    <td>895.20</td>
+    <td bgcolor="#cccccc">1170.15</td>
+  </tr>
+</table>
+  
+</body>
+</html>

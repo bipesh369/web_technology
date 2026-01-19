@@ -1,0 +1,6 @@
+li {
+display: inline; 
+margin-right: 50px;}
+li.coming-soon {
+/* display: none; */
+visibility: hidden;}

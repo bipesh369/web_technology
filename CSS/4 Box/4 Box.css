@@ -1,0 +1,16 @@
+/* Box Dimensions: width, height */
+div{
+  width: 500px;
+  height: 600px;
+  background-color: rgb(15, 40, 234);
+}
+
+p {
+  width: 75%;
+  height: 75%;
+  background-color: bisque;
+}
+
+/* Limiting Width: min-width, max-width */
+
+

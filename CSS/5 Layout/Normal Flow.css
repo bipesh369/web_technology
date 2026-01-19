@@ -1,0 +1,73 @@
+body {
+width: 750px;
+font-family: Arial, Verdana, sans-serif;
+color: #f88008ad;}
+
+h1 {
+background-color: #efefef;
+padding: 10px;}
+
+p {
+width: 450px;}
+/* Relative Positining */
+p.bjr {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  color: rgb(31, 173, 90);
+}
+
+/* Abosulate Positining */
+h1 {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 250px;
+}
+
+/* Fixed Positioning */
+h1 {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+p.bjr{
+  margin-top: 100px;
+}
+
+/* Z-index */
+h1 {
+position: fixed;
+top: 0px;
+left: 0px;
+margin: 0px;
+padding: 10px;
+width: 100%;
+background-color: #efefef;
+z-index: 10;}
+p {
+position: relative;
+top: 70px;
+left: 70px;}
+
+/* Floating Elements */
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 130%;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid #665544;
+  border-bottom: 1px solid #665544;
+}
+/* clearing floats */
+.clear {
+  clear: right;
+}

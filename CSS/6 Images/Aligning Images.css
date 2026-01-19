@@ -1,0 +1,39 @@
+img.align-left {
+  float: left;
+  margin-right: 10px;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 10px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+/* Centering Images Using Css */
+img.align-center {
+  display: block;
+  margin: 0px auto;
+}
+
+/* Background Images */
+/* p {
+  background-image: url("Images/Baahu.jpg");
+  background-size: cover;
+} */
+
+/* Repeating Images */
+/* body {
+  background-image: url("Images/Bipesh.jpg");
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+/* Background Postion */
+body {
+  background-position: center-top;
+}
