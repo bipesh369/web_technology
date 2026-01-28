@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading */
+h2 {
+  position: absolute;
+  top: 30px;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Gallery wrapper */
+#images {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Cards */
+#images li {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Image styling */
+#images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Hover effects */
+#images li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+#images li:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* Google link card */
+#google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #06202a;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#google:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth removal animation (when JS removes items) */
+#images li {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  h2 {
+    position: static;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  #images {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  #images img,
+  #google {
+    height: 180px;
+  }
+}
