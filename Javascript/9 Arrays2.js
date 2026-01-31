@@ -1,4 +1,8 @@
-// Arrays
+// Arrays are objects.
+// That means:
+// They are stored in memory by reference
+// They are mutable
+// They can bite you if you treat them like values
 
 const myArray = [1, 2, 3, 4, 5, 6]
 // console.log(myArray[3])
@@ -71,3 +75,17 @@ let score2 = 200
 let score3 = 300
 
 console.log(Array.of(score1, score2, score3))
+
+
+map (transform)
+const doubled = [1, 2, 3].map(n => n * 2);
+// [2, 4, 6]
+
+filter (remove)
+const evens = [1, 2, 3, 4].filter(n => n % 2 === 0);
+// [2, 4]
+
+reduce (combine)
+const sum = [1, 2, 3].reduce((a, b) => a + b, 0);
+// 6
+console.log(sum)
